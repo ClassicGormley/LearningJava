@@ -1,0 +1,28 @@
+create database hotel;
+
+use hotel;
+
+create table reservation (
+firstname varchar(30),
+lastname varchar(30),
+checkin varchar(8),
+checkout varchar(8),
+numofroom varchar(5),
+gperroom int(11),
+specialrate varchar(30),
+studio char(1),
+standard char(1),
+family char(1),
+suite char(1),
+specialrequest varchar(100),
+street varchar(50),
+city varchar(30),
+state char(2),
+zip varchar(10),
+phone varchar(25),
+creditcard varchar(10),
+creditcardnum varchar(16),
+expdate varchar(5));
+
+create table creditcard (
+creditcardinfo varchar(21) primary key not null);
